@@ -15,10 +15,10 @@ keywords: Spring,Spring Boot,Spring Cloud,MongoDB,Jvm,Docker,生活故事,架构
 encoding: "utf-8"
 favicon: favicon.png 
 
-repository: ldmyown/itangel.github.io
+repository: ldmyown/ldmyown.github.io
 github_url: https://github.com/ldmyown
-url: https://ldmyown.github.io/itangel.github.io
-enforce_ssl: itangel.com
+url: https://ldmyown.github.io
+enforce_ssl: ldmyown.com
 
 ## Gem
 plugins:
