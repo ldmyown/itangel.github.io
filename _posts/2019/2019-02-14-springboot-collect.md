@@ -1,17 +1,58 @@
 ---
 layout: post
-title: 关于此博客1
-category: life
-tags: [life]
-no-post-nav: true
+title: springboot学习资料汇总
+category: springboot
+tags: [springboot]
 ---
 
-此博客的创建缘由。
+**重点推荐：[Spring Boot 中文索引](http://springboot.fun/)**
 
-我是一名小小的程序猿，一直想弄一个自己的博客网站，将自己平时工作和学习过程中的一些心得与笔记记录在自己的博客网站中，由于一直没有购买自己的服务器，所以搁置了好长时间，前段时间无意间看到了Yummy-Jekyll这个博客的主题，博客的风格比较适合程序员，于是就尝试了一下，搭建了此博客。
 
-[Yummy-Jekyll的主题地址](https://github.com/DONGChuan/Yummy-Jekyll)<br /> 
+## 推荐博客
 
-{% highlight java %}
-此博客将记录我对技术的理解和部分生活的感悟，还有一些技术问题的解决方案，另外总结收集一些感兴趣的开源项目。
-{% endhighlight %}
+
+- [纯洁的微笑](http://www.ityouknow.com/spring-boot.html)
+
+- [程序猿DD](http://blog.didispace.com/categories/Spring-Boot/) 
+
+- [liaokailin的专栏](http://blog.csdn.net/liaokailin/article/category/5765237)
+
+- [Spring Boot 揭秘与实战 系列](http://blog.720ui.com/columns/springboot_all/)
+
+- [catoop的专栏](http://blog.csdn.net/column/details/spring-boot.html)
+
+- [简书Spring Boot专题](http://www.jianshu.com/c/f0cf6eae1754)
+
+- [方志朋Spring Boot 专栏](http://blog.csdn.net/column/details/15397.html)
+
+- [Spring-boot集成](http://lihao312.iteye.com/)
+
+
+## 推荐网站
+
+- [Spring boot 官网](http://projects.spring.io/spring-boot/)
+
+- [Spring Boot参考指南-中文版](https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/content/)
+
+- [Gradle 中文参考指南](https://dongchuan.gitbooks.io/gradle-user-guide-/content/tutorials/)
+
+- [慕课网视频](http://www.imooc.com/learn/767)
+
+- [spring-boot-tutorials](http://www.mkyong.com/tutorials/spring-boot-tutorials/)  
+
+- [开源书籍-微服务：从设计到部署](https://github.com/oopsguy/microservices-from-design-to-deployment-chinese)  
+
+
+## 开源代码
+
+- [spring boot官方例子](https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples)
+
+- [spring-boot-examples](https://github.com/ityouknow/spring-boot-examples)
+
+- [SpringBoot-Learning](https://github.com/dyc87112/SpringBoot-Learning)
+
+- [favorites-web](https://github.com/cloudfavorites/favorites-web)
+
+- [springboot-learning-example](https://github.com/JeffLi1993/springboot-learning-example)
+
+- [spring-boot-all](https://github.com/leelance/spring-boot-all)
