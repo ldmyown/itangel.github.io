@@ -3,6 +3,7 @@ layout: post
 title: springboot学习资料汇总
 category: springboot
 tags: [springboot]
+---
 
 **重点推荐：[Spring Boot 中文索引](http://springboot.fun/)**
 
