@@ -1,8 +1,9 @@
 ---
 layout: post
-title: springboot学习资料汇总
+title: 关于此博客1
 category: springboot
 tags: [springboot]
+no-post-nav: true
 ---
 
 **重点推荐：[Spring Boot 中文索引](http://springboot.fun/)**
