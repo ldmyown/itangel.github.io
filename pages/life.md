@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 你的生活和我一样吗
+title: 生活该如何丰富多彩呢
 titlebar: life
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 你的生活有什么故事？
+subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 生活中的点点滴滴
 menu: life
 css: ['blog-page.css']
 permalink: /life
