@@ -1,8 +1,8 @@
 ---
 layout: post
-title: springboot(一)：入门篇
+title: springboot(涓�)锛氬叆闂ㄧ瘒
 category: springboot
 tags: [springboot]
 ---
 
-**重点推荐：[Spring Boot 中文索引](http://springboot.fun/)**
+**閲嶇偣鎺ㄨ崘锛歔Spring Boot 涓枃绱㈠紩](http://springboot.fun/)**
