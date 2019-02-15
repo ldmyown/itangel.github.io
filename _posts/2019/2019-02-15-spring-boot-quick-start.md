@@ -61,27 +61,27 @@ Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来�
 
   - idea中内置了spring boot项目的快速建立，只需要新建一个Spring Initializr项目，然后就会自动去[https://start.spring.io/](https://start.spring.io/) 中自动下载需要的jar包到本地，springboot支持的jdk版本为1.7以上，我使用的是1.8。
 
-![springboot-01](img\springboot-01.png)
+![springboot-01](\assets\images\2019\springboot\springboot-01.png)
 
 
 
 - 点击next后，输入项目的基本信息。
 
 
- ![springboot-02](img\springboot-02.png)
+ ![springboot-02](\assets\images\2019\springboot\springboot-02.png)
 
 
 
 - 点击next，可以选择需要导入的依赖，这里提供了很多可以导入的依赖，包括数据库，web，Security等等，当然，这些依赖也可以创建项目后，手动导入。我们这个只是简单的web项目，所以只选择的web模块。
 
-   ![springboot-03](img\springboot-03.png)
+   ![springboot-03](\assets\images\2019\springboot\springboot-03.png)
 
   ​
 
 
 - 点击next，输入项目的名称和路径。
 
-   ![springboot-04](img\springboot-04.png)
+   ![springboot-04](\assets\images\2019\springboot\springboot-04.png)
 
 
 
@@ -112,7 +112,7 @@ public class HelloWorldController {
 
 ### 项目结构介绍
 
- ![springboot-05](img\springboot-05.png)
+ ![springboot-05](\assets\images\2019\springboot\springboot-05.png)
 
  从图中可以看出，Spring boot 的基础结构共三个文件
 
