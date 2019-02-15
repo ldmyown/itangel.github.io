@@ -11,5 +11,6 @@ tags: [other]
 
 **激活步骤**
 ![jrebel_active.png](https://ldmyown.github.io\assets\images\2019\jrebel_active.png)
-在jrebel 激活界面，选择jrebel server激活，在服务器地址栏中输入
-**http://139.199.89.239:1008/88414687-3b91-4286-89ba-2dc813b107ce**，邮箱随便写，即可激活
+
+- 在jrebel 激活界面，选择jrebel server激活
+- 在服务器地址栏中输入**http://139.199.89.239:1008/88414687-3b91-4286-89ba-2dc813b107ce**，邮箱随便写，即可激活
