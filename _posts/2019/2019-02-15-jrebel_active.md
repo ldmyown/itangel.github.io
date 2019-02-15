@@ -1,8 +1,8 @@
 ---
 layout: post
 title: jrebel idea 插件激活
-category: other
-tags: [other]
+category: idea
+tags: [idea]
 ---
 
 在使用idea做java开发时，经常会使用到jrebel插件做热部署，但是jrebel并不是免费的插件。
