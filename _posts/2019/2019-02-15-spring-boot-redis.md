@@ -5,6 +5,8 @@ category: springboot
 tags: [springboot]
 ---
 
+本文介绍一下在springboot中如何使用redis来做缓存
+
 ## 说明
 
 spring boot除了对于常用的数据库支持，还对nosql 数据库也进行了封装自动化。这里对redis的使用做一个介绍。

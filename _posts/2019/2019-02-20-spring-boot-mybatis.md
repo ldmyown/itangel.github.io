@@ -5,6 +5,8 @@ category: springboot
 tags: [springboot]
 ---
 
+本文介绍一下springboot整合mybatis的使用
+
 # 说明
 
 在springboot 中，jpa这种极简的数据操作方式还是挺好用的，因为之前一直在使用mybatis，所以这里总结一下springboot 整合mybatis 的使用方法。mybatis有两种使用方式，一种是注解的方式，一种是xml 的方式。

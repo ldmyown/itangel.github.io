@@ -5,6 +5,8 @@ category: springboot
 tags: [springboot]
 ---
 
+本文介绍一下springboot中定时任务的使用方法
+
 ## 说明
 
 在项目开发过程中，我们经常会用到定时任务，在spring中，可以直接使用task来创建定时任务，那么在springboot中如何使用定时任务呢？
