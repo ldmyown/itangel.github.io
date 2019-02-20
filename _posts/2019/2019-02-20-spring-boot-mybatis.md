@@ -5,13 +5,13 @@ category: springboot
 tags: [springboot]
 ---
 
-## 说明
+# 说明
 
 在springboot 中，jpa这种极简的数据操作方式还是挺好用的，因为之前一直在使用mybatis，所以这里总结一下springboot 整合mybatis 的使用方法。mybatis有两种使用方式，一种是注解的方式，一种是xml 的方式。
 
 
 
-## orm框架简介
+# orm框架简介
 
 orm框架就是为了简化在编码过程中对数据库的编码所产生的，如今基本只剩两家了，一个是宣称不用写一句sql 的hibernate，一个是可以灵活调试动态sql 的mybatis，它们都有自己的特点，在开发过程中可以灵活的调用，但是在目前，传统企业大部分使用的是hibernate，互联网行业大部分选择了mybatis。
 
@@ -21,9 +21,9 @@ mybatis初期使用比较麻烦，需要各种配置文件、实体类、dao层�
 
 
 
-## springboot 使用mybatis
+# springboot 使用mybatis
 
-### 1.创建一个简单的springboot项目
+## 1.创建一个简单的springboot项目
 
 引入mybatis的依赖```mybatis-spring-boot-starter```对应pom文件为
 
@@ -87,9 +87,9 @@ mybatis初期使用比较麻烦，需要各种配置文件、实体类、dao层�
 
 下面来介绍两种使用mybatis 的方法
 
-### 2. 无配置文件注解版
+## 2. 无配置文件注解版
 
-- 在`application.properties` 添加相关配置
+### 在`application.properties` 添加相关配置
 
  ```
 spring.datasource.url=jdbc:mysql://localhost:3306/test1?useUnicode=true&characterEncoding=utf-8
@@ -101,13 +101,13 @@ mybatis.type-aliases-package=com.telangel.entity
 
 配置完spring.datasource 相关配置后，在系统系统时，数据源会自动注入到sqlSessionFactory中，sqlSessionFactory会自动注入到mapper中，所有的配置操作都自动帮我们完成了，我们只需要直接使用就可以了。
 
-- 添加mapper包扫描
+### 添加mapper包扫描
 
   mapper包扫描有两种方式添加
 
-  - 1. 在启动类中添加对mapper包扫描`@MapperScan`注解，建议采用这一种，只需要配置一次就可以了。
+- 1. 在启动类中添加对mapper包扫描`@MapperScan`注解，建议采用这一种，只需要配置一次就可以了。
 
-       ~~~java
+     ~~~java
         @SpringBootApplication
         @MapperScan("com.telangel.springbootmybatis.mapper")
         public class SpringbootMybatisApplication {
@@ -117,54 +117,55 @@ mybatis.type-aliases-package=com.telangel.entity
         	}
 
         }
-       ~~~
+     ~~~
 
-  - ​ 2. 直接在Mapper类上面添加注解`@Mapper`,这种方式，在每一个mapper上都要加上这个注解，相对来说比较麻烦。
-
-    ~~~java
-    @Mapper
-    public interface UserMapper {
-        
-        User getUserById(Integer id);
-    }
-    ~~~
-
-    ​
-
-- 开发mapper，这一步是最重要的一步，所有的curd操作都放在这里
+- ​ 2. 直接在Mapper类上面添加注解`@Mapper`,这种方式，在每一个mapper上都要加上这个注解，相对来说比较麻烦。
 
   ~~~java
-  public interface UserMapper {
-
-      @Select("select * from t_user where user_id = #{id}")
-      @Results({
-              @Result(property = "userName",  column = "user_name"),
-              @Result(property = "userPassword", column = "user_password"),
-              @Result(property = "userId", column = "user_id")
-      })
-      User getUserById(Long id);
-
-      @Insert("insert into t_user(user_name, user_password, sex, age) values(#{userName}, #{userPassword}, #{sex}, #{age})")
-      void insert(User user);
-
-      @Update("update t_user set user_name = #{userName}, user_password = #{userPassword}, sex = #{sex}, age = #{age} where user_id = #{userId}")
-      void update(User user);
-
-      @Delete("delete from t_user where user_id = #{userId}")
-      void delete(Long id);
-  }
-
+      @Mapper
+      public interface UserMapper {
+          
+          User getUserById(Integer id);
+      }
   ~~~
 
-  > - @Select 是查询类的注解，所有的查询均使用这个
-  > - @Result 修饰返回的结果集，关联实体类属性和数据库字段一一对应，如果实体类属性和数据库属性名保持一致，就不需要这个属性来修饰。
-  > - @Insert 插入数据库使用，直接传入实体类会自动解析属性到对应的值
-  > - @Update 负责修改，也可以直接传入对象
-  > - @delete 负责删除
+      ​
 
-  ​
+### 开发mapper
+这一步是最重要的一步，所有的curd操作都放在这里
 
-  > **注意，使用#符号和$符号的不同**
+    ​~~~java
+    public interface UserMapper {
+    
+        @Select("select * from t_user where user_id = #{id}")
+        @Results({
+                @Result(property = "userName",  column = "user_name"),
+                @Result(property = "userPassword", column = "user_password"),
+                @Result(property = "userId", column = "user_id")
+        })
+        User getUserById(Long id);
+    
+        @Insert("insert into t_user(user_name, user_password, sex, age) values(#{userName}, #{userPassword}, #{sex}, #{age})")
+        void insert(User user);
+    
+        @Update("update t_user set user_name = #{userName}, user_password = #{userPassword}, sex = #{sex}, age = #{age} where user_id = #{userId}")
+        void update(User user);
+    
+        @Delete("delete from t_user where user_id = #{userId}")
+        void delete(Long id);
+    }
+    ​~~~
+    
+    > - @Select 是查询类的注解，所有的查询均使用这个
+    > - @Result 修饰返回的结果集，关联实体类属性和数据库字段一一对应，如果实体类属性和数据库属性名保持一致，就不需要这个属性来修饰。
+    > - @Insert 插入数据库使用，直接传入实体类会自动解析属性到对应的值
+    > - @Update 负责修改，也可以直接传入对象
+    > - @delete 负责删除
+    
+    ​
+    
+    > **注意，使用#符号和$符号的不同**
+
 
 
 ```java
@@ -178,9 +179,9 @@ Teacher selectTeachForGivenName(@Param("name") String name);
 ```
 
 
-- 编写controller测试curd
+### 编写controller测试curd
 
-  ```java
+```java
   @RestController
   @RequestMapping("/user")
   public class UserController {
@@ -214,30 +215,29 @@ Teacher selectTeachForGivenName(@Param("name") String name);
           return "删除用户成功";
       }
   }
-  ```
+```
 
 
 
-### 3 xml版本
+## 3 xml版本
 
-1. 配置
+### 配置
 
     pom文件和上个版本一样，只是`application.properties`新增以下配置
 
-   ~~~properties
+~~~properties
     mybatis.config-location=classpath:mybatis/mybatis-config.xml
     mybatis.mapper-locations=classpath:mybatis/mapper/*.xml
-   ~~~
+~~~
 
-    
 
     这里的配置是指定mybatis的基础配置文件和实体类映射文件的地址
 
    ​
 
-2. 创建mybatis的基础配置文件
+### 创建mybatis的基础配置文件
 
-   ~~~xml
+~~~xml
     <configuration>
     	<typeAliases>
     		<typeAlias alias="Integer" type="java.lang.Integer" />
@@ -248,11 +248,13 @@ Teacher selectTeachForGivenName(@Param("name") String name);
     		<typeAlias alias="LinkedList" type="java.util.LinkedList" />
     	</typeAliases>
     </configuration>
-   ~~~
+~~~
 
    ​
 
-3.  添加User的映射文件，这里实际上就是把注解版的sql转移到了xml文件中
+### 添加User的映射文件
+
+这里实际上就是把注解版的sql转移到了xml文件中
 
    ~~~
    <?xml version="1.0" encoding="UTF-8" ?>
@@ -310,9 +312,9 @@ Teacher selectTeachForGivenName(@Param("name") String name);
 
    ​
 
-4. 创建dao层代码
+### 创建dao层代码
 
-   ~~~java
+~~~java
    public interface UserMapper {
 
        User getUserById(Long id);
@@ -324,15 +326,15 @@ Teacher selectTeachForGivenName(@Param("name") String name);
        void delete(Long id);
    }
 
-   ~~~
+~~~
 
    ​
 
-5. 创建接口方法
+### 创建接口方法
 
    此处和注解版的创建方法一样，不在赘述
 
-6. 测试使用
+### 测试使用
 
    此处和注解版的创建方法一样，不在赘述
 
