@@ -155,20 +155,21 @@ userservice中的test方法
 ~~~java
 @Configuration
 @EnableAsync
-public class AsyncConfig {
-　　//线程池配置参数（可通过配置文件读取）
-　　private int corePoolSize = 10;
-　　private int maxPoolSize = 200;
-　　private int queueCapacity = 10;
-　　@Bean
-　　public Executor taskExecutor() {
-　　　　ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
-　　　　executor.setCorePoolSize(corePoolSize);
-　　　　executor.setMaxPoolSize(maxPoolSize);
-　　　　executor.setQueueCapacity(queueCapacity);
-　　　　executor.initialize();
-　　　　return executor;
-　　}
+public class SchedulingConfiguration {
+    //线程池配置参数（可通过配置文件读取）
+    private int corePoolSize = 10;
+    private int maxPoolSize = 200;
+    private int queueCapacity = 10;
+    @Bean
+    public Executor taskExecutor() {
+        ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
+        executor.setCorePoolSize(corePoolSize);
+        executor.setMaxPoolSize(maxPoolSize);
+        executor.setQueueCapacity(queueCapacity);
+        executor.initialize();
+        return executor;
+    }
+
 }
 ~~~
 
