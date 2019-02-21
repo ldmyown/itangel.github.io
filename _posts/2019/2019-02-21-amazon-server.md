@@ -20,27 +20,27 @@ tags: [other]
 
 官网地址：https://amazonaws-china.com/cn
 
-如果你没有亚马逊账号，那么先注册一个账号，访问官网后，点击右上角的注册选项开始注册：
+- 如果你没有亚马逊账号，那么先注册一个账号，访问官网后，点击右上角的注册选项开始注册：
 
 
 
 ![选择注册选项，开始注册亚马逊账号](https://ldmyown.github.io\assets\images\2019\amazon-server\aws1.png)
 
-然后输入邮箱、密码等信息，如：
+- 输入邮箱、密码等信息，如：
 
 ![输入邮箱等信息](https://ldmyown.github.io\assets\images\2019\amazon-server\aws2.png)
 
-接着继续填写联系人信息，如下：
+- 填写联系人信息，如下：
 
 ![填写账号类型](https://ldmyown.github.io\assets\images\2019\amazon-server\aws3.png)
 
 ![填写个人信息](https://ldmyown.github.io\assets\images\2019\amazon-server\aws4.png)
 
-然后点击创建账户并继续，如果上面填写的信息没问题，则进入到信用卡验证这一步。如下：
+- 点击创建账户并继续，如果上面填写的信息没问题，则进入到信用卡验证这一步。如下：
 
 ![验证个人信息及信用卡信息](https://ldmyown.github.io\assets\images\2019\amazon-server\aws5.png)
 
-信息提交成功后，信用卡会扣款 1 美元。接着进入下一步，电话验证：
+- 信息提交成功后，信用卡会扣款 1 美元。接着进入下一步，电话验证：
 
 ![输入电话号码，获取 pin 码](https://ldmyown.github.io\assets\images\2019\amazon-server\aws6.png)
 
@@ -52,49 +52,52 @@ tags: [other]
 
 ![手机输入pin码，验证成功提示](https://ldmyown.github.io\assets\images\2019\amazon-server\aws8.png)
 
-然后接着点击继续进入下一步，选择支持计划：
+- 接着点击继续进入下一步，选择支持计划：
 
 ![选择免费方案](https://ldmyown.github.io\assets\images\2019\amazon-server\aws9.png)
 
-我们选择基本方案免费选项，进入下一步，这一步会我们的账户处于激活中，如果成功激活后会收到一封激活邮件，这个过程大概几分钟的时间：
+- 这里我只是免费体验一下，所以选择的是免费的方案，服务器性能较低，如果是土豪可以选择收费套餐
+
+
+- 下一步，会告诉我们账户正在激活中，如果成功激活，则会向我们绑定的邮箱中发一封激活邮件，这个过程大概几分钟的时间，此过程中不能操作创建实例，请耐心等待
 
 ![成功后会收到一封邮件提示](https://ldmyown.github.io\assets\images\2019\amazon-server\aws10.png)
 
 ## 亚马逊云 EC2 搭建
 
-点击右上角的我的账户，然后选择 AWS 控制台，输入账号、密码进行登录：
+- 点击右上角的我的账户，然后选择 AWS 控制台，输入账号、密码进行登录：
 
 ![登录 aws 控制台](https://ldmyown.github.io\assets\images\2019\amazon-server\aws11.png)
 
-登录后，右上角的地区选择一个合适的地区，如：
+- 登录后，右上角的地区选择一个合适的地区，如：
 
 ![选择合适的地区](https://ldmyown.github.io\assets\images\2019\amazon-server\aws12.png)
 
-接着，在左上角的服务，选择 EC2，如：
+- 左上角的服务，选择 EC2，如：
 
 ![在控制台选择 EC2](https://ldmyown.github.io\assets\images\2019\amazon-server\aws13.png)
 
-然后在新开的页面中，会有一个创建实例的选项：
+- 在新开的页面中，会有一个创建实例的选项：
 
 ![创建EC2实例](https://ldmyown.github.io\assets\images\2019\amazon-server\aws14.png)
 
-点击启动实例，进入到选择一个 Amazon 系统映像选项，往下拉，找到 Ubuntu Server 14.04 LTS (HVM) 选项（注意，要记得选择符合条件的免费套餐）：
+- 点击启动实例，进入到选择一个 Amazon 系统映像选项，往下拉，找到 Ubuntu Server 14.04 LTS (HVM) 选项（注意，要记得选择符合条件的免费套餐）：
 
 ![选择免费配置套餐](https://ldmyown.github.io\assets\images\2019\amazon-server\aws15.png)
 
-然后点击选择选项，进入到实例类型选项，仍旧选择符合条件的免费套餐，然后点击审核和启动：
+- 点击选择选项，进入到实例类型选项，仍旧选择符合条件的免费套餐，然后点击审核和启动：
 
 ![审核和启动](https://ldmyown.github.io\assets\images\2019\amazon-server\aws16.png)
 
-接着是核查实例启动，这里不用操作什么，直接点击启动：
+- 核查实例启动，这里不用操作什么，直接点击启动：
 
 ![启动创建实例](https://ldmyown.github.io\assets\images\2019\amazon-server\aws17.png)
 
-然后出现一个选择现有密钥对或创建新密钥对的弹窗，这里我们选择创建新密钥对，然后密钥对名称你可以随便取一个名字，不过该名字在登录时有用，这里我取 gufen，如下：
+然后出现一个选择现有密钥对或创建新密钥对的弹窗，这里我们选择创建新密钥对，然后密钥对名称你可以随便取一个名字，不过该名字在登录时有用，这里我取lid , 如下：
 
 ![输入密钥对名称，下载密钥对](https://ldmyown.github.io\assets\images\2019\amazon-server\aws18.png)
 
-然后点击下载密钥对，下载一个后缀为 pem 的文件,因为我这里名称为gufen，所以下载的文件名称为 gufen.pem 。(注意该文件记得保存，后面会用到，用于服务器登录)。然后启动实例即可：
+然后点击下载密钥对，下载一个后缀为 pem 的文件,因为我这里名称为lid，所以下载的文件名称为 lid.pem 。(注意该文件记得保存，后面会用到，用于服务器登录)。然后启动实例即可：
 
 ![选择密钥对，然后启动实例](https://ldmyown.github.io\assets\images\2019\amazon-server\aws19.png)
 
@@ -148,11 +151,11 @@ tags: [other]
 
 ![成功连接到 EC2](https://ldmyown.github.io\assets\images\2019\amazon-server\aws28.png)
 
-然后就可以开始搭建各种服务了，诸如酸酸等各种服务。:) 。如果在搭建过程中需要使用 root 用户，使用 sudo -i 命令切换到 root 用户即可。上面关于亚马逊云aws搭建基本就完成了，不过还要记得配置防火墙。
+然后就可以开始搭建各种服务了。:) 。如果在搭建过程中需要使用 root 用户，使用 sudo -i 命令切换到 root 用户即可。上面关于亚马逊云aws搭建基本就完成了，不过还要记得配置防火墙。
 
 ## 修改 EC2 防火墙配置
 
-在搭建完相应的服务后，比如酸酸，发现始终连接不上。亚马逊云 EC2 防火墙入站配置默认只开启了 22 端口的流量，你可以修改该配置，把协议和端口范围都改成全部，或者新建一条防火墙规则，开启某个特定端口。
+在搭建完相应的服务后，发现始终连接不上。亚马逊云 EC2 防火墙入站配置默认只开启了 22 端口的流量，你可以修改该配置，把协议和端口范围都改成全部，或者新建一条防火墙规则，开启某个特定端口。
 
 在实例列表中，往右边拖动，有一个安全组标签，选择该标签进入防火墙配置：
 
