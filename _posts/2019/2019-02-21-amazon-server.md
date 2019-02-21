@@ -81,7 +81,7 @@ tags: [other]
 
 ![创建EC2实例](https://ldmyown.github.io\assets\images\2019\amazon-server\aws14.png)
 
-- 点击启动实例，进入到选择一个 Amazon 系统映像选项，往下拉，找到 Ubuntu Server 14.04 LTS (HVM) 选项（注意，要记得选择符合条件的免费套餐）：
+- 点击启动实例，进入到选择一个 Amazon 系统映像选项，往下拉，找到 Ubuntu Server 18.04 LTS (HVM) 选项（注意，要记得选择符合条件的免费套餐）：
 
 ![选择免费配置套餐](https://ldmyown.github.io\assets\images\2019\amazon-server\aws15.png)
 
