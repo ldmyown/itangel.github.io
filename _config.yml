@@ -19,7 +19,7 @@ repository: ldmyown/ldmyown.github.io
 github_url: https://github.com/ldmyown
 url: https://ldmyown.github.io
 enforce_ssl: ldmyown.com
- 
+
 ## Gem
 plugins:
   - jekyll-paginate
