@@ -149,7 +149,6 @@ tags: [other]
 
 - [mysql基础教程](https://link.jianshu.com/?t=http%3A%2F%2Fwww.runoob.com%2Fmysql%2Fmysql-tutorial.html)
 
-- https://link.jianshu.com/?t=https%3A%2F%2Fwww.imooc.com%2Flearn%2F110)
 
 **python**：
 
@@ -193,7 +192,7 @@ tags: [other]
 
 ## 安全方向
 
-其实安全测试，更加偏向于网络攻防，就是我们常听到的黑客。
+对于安全测试，更加偏向于网络攻防，就是我们常听到的黑客。
 
 主要包括一下几个方面：
 
@@ -213,7 +212,7 @@ tags: [other]
 
 
 
-**当然也需要某人多多提提改进意见，毕竟我是一个外行人**
+**当然也需要某人多多提提改进意见，毕竟我是一个外行人:stuck_out_tongue_winking_eye::stuck_out_tongue_winking_eye:**
 
 
 
