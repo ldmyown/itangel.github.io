@@ -61,7 +61,7 @@ flush privileges;
 
 
 
-## 删除sql server 中提示正在使用的数据库
+## sql server 中删除数据库
 
 在sql server中删除数据库时，经常会提示数据库正在使用无法删除，那么我们可以通过一下命令来删除不需要的数据库。
 
