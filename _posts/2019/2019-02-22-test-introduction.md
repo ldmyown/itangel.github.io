@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 如何做好软件测试
-category: other
-tags: [other]
+category: test
+tags: [test]
 ---
 
 
