@@ -1,6 +1,6 @@
 ---
 layout: post
-title: springboot(四)：Spring boot中mybatis的使用
+title: springboot(三)：Spring boot中mybatis的使用
 category: springboot
 tags: [springboot]
 ---
