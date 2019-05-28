@@ -22,7 +22,7 @@ Beetl 是Bee Template Language 的缩写，他是新一代的模板引擎，目�
 
 - 高性能：beetl具有高效的性能，而且消耗较低的CPU。beetl与其他的模板的性能对比可以看图中的对比。
 
-   ![beetl-1](D:\code\ldmyown.github.io\assets\images\2019\beetl\beetl-1.png)
+   ![beetl-1](https://ldmyown.github.io\assets\images\2019\beetl\beetl-1.png)
 
 - 容易整合：beetl容易和各种web框架整合，如spring mvc，jFinal， Struts，servlet等等。
 
