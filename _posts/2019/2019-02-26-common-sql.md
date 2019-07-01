@@ -71,3 +71,11 @@ alter database "audit-620" set single_user with rollback immediate ;
 drop database "audit-620";
 ~~~
 
+
+
+## mysql 5.7 修改用户的密码
+
+~~~
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
+~~~
+
