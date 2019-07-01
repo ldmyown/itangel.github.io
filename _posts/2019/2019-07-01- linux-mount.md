@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 通过linux镜像文件做定制后重新打包成ISO镜像
+title: Ubuntu18.04挂载Samba共享文件夹
 category: other
 tags: [other]
 ---
