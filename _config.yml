@@ -195,3 +195,4 @@ gitalk:
     clientSecret: fd1ade3572fecbb15e623d19f38908c98a6b928d
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : true
+theme: jekyll-theme-merlot
